@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  cura-engine:
+    build: .
+    container_name: cura-builder
+    volumes:
+      - ./:/workspace
+    working_dir: /workspace
+    tty: true
+    stdin_open: true
